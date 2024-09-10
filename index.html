@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lulab</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div id="animation-container">
+        <div class="floating-elements"></div>
+        <header>
+            <h1>Lulab</h1>
+        </header>
+
+        <div class="content-section">
+            <div class="container">
+                <div class="founder-info">
+                    <div class="founder-bio">
+                        <h2>陆向谦实验室</h2>
+                        <img src="Images/LXQPFP.png" alt="Lu Xiangqian" class="founder-photo">
+                        <p><strong>陆向谦博士: 清华大学经济管理学院特聘教授，毕业于加州伯克利大学Hass商学院，清华研究生创业系列课程建设探索项目曾获“清华大学教学成果一等奖”</strong></p>
+                        <p>陆向谦教授培养两个孩子都很成功，女儿：斯坦福大学，在校期间已是Pinterest早期雇员，现为硅谷百亿美金估值名企高管。儿子：加州伯克利大学，19岁在校期间加入Uber,现为谷歌高级工程师。</p>
+                    </div>
+                </div>
+
+                <div class="teachers-info">
+                    <h2>名师指路</h2>
+                    <div class="teacher-cards">
+                        <div class="teacher-card" onclick="openDialog('杨仕明', '陆向谦实验室元宇宙、工业级项目负责人', 'AI Expert', 'Images/T1.jpg')">
+                            <img src="Images/T1.jpg" alt="Teacher 1" class="teacher-photo">
+                            <h3>杨仕明</h3>
+                            <p>陆向谦实验室元宇宙、工业级项目负责人</p>
+                        </div>
+                        <div class="teacher-card" onclick="openDialog('Jane Smith', 'Full-stack developer with expertise in multiple programming languages.', 'Coding Guru', 'Images/T2.jpg')">
+                            <img src="Images/T2.jpg" alt="Teacher 2" class="teacher-photo">
+                            <h3>张晨</h3>
+                            <p>陆向谦实验室 AI 训练营负责人</p>
+                        </div>
+                        <div class="teacher-card" onclick="openDialog('Alex Johnson', 'Specializes in big data analytics and predictive modeling.', 'Data Science Wizard', 'Images/T3.jpg')">
+                            <img src="Images/T3.jpg" alt="Teacher 3" class="teacher-photo">
+                            <h3>XXX</h3>
+                            <p>XXXXXXX</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="signup-section">
+                    <h2>Think you have what it takes?</h2>
+                    <p>Success is Not guaranteed</p>
+                </div>
+
+                <div class="past-projects">
+                    <h2>实验室学员AI项目优秀成果展示</h2>
+                    <div class="project-card" onclick="openDialog('AI-Powered Game', 'A game enhanced by AI, where players can interact with intelligent characters that learn and adapt.', '🏆 Best AI Integration Award', 'Videos/frogThing.mp4')">
+                        <h3>青蛙外教</h3>
+                        <p>吕思彤：11岁，作品：青蛙外教，字节跳动大模型发布会开场展作品。</p>
+                        <div class="award">🏆 最年轻的扣子AI外教开发者</div>
+                    </div>
+                    <div class="project-card" onclick="openDialog('Weather Prediction AI', 'An AI model trained to predict local weather patterns using historical data and advanced coding techniques.', '🏅 Most Innovative Project', 'Videos/weatherPrediction.mp4')">
+                        <h3>A waste of time</h3>
+                        <p>王禹钧：12岁，作品：a waste of time，获2024由网易和中国科学馆联合举办的2024 AI音乐会前十名奖</p>
+                        <div class="award">🏅 最佳AI音乐创作奖</div>
+                    </div>
+                    <div class="project-card" onclick="openDialog('Robotic Plant Watering System', 'A Lua-controlled robot that monitors soil moisture and waters plants automatically using AI algorithms.', '🌱 Eco-Friendly Innovation Award', 'Videos/plantWateringSystem.mp4')">
+                        <h3>Robotic Plant Watering System</h3>
+                        <p>A Lua-controlled robot that monitors soil moisture and waters plants automatically using AI algorithms.</p>
+                        <div class="award">🌱 Eco-Friendly Innovation Award</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <div class="container">
+                <div class="course-offerings">
+                    <h2>陆向谦实验室AI暑期训练营火热报名中!</h2>
+                    <div class="course-card" onclick="window.open('https://buy.stripe.com/8wMeWieDU41Td5S9AF', '_blank')">
+                        <h3>🚀 月卡会员：</h3>
+                        <p>AI是时代的风口，实验室将带领孩子们一同探索AI魔幻世界!</p>
+                        <ul>
+                            <li>深入浅出带领孩子们做项目！</li>
+                            <li>玩中学，学中玩，最好的教育是熏陶！</li>
+                            <li>做一个属于孩子自己的英语外教，从小把英语薰陶成母语！</li>
+                        </ul>
+                        <div class="price-tag">现在报名，仅需 6,880 !</div>
+                    </div>
+                    <div class="course-card">
+                        <h3>🌟 年卡会员:</h3>
+                        <p>从AI训练营里做出成绩的孩子中，挑选一部分面试，面试通过者可报名加入年卡俱乐部!</p>
+                        <ul>
+                            <li>元宇宙俱乐部：3.8万元/年</li>
+                            <li>工业级技术俱乐部：7.6万元/年</li>
+                            <li> </li>
+                        </ul>
+                        <div class="interview-badge">面试申请</div>
+                        <p><small>*面试成功后可加入</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2024 Lulab - Where AI & Coding Learning is an Adventure!</p>
+            <p>Contact us: info@lulab.com | (123) 456-7890</p>
+        </footer>
+
+        <!-- Overlay -->
+        <div id="overlay" class="overlay"></div>
+
+        <!-- Dialog for displaying project details -->
+        <div id="dialog" class="dialog-container">
+            <h2 id="dialog-title"></h2>
+            <p id="modal-description"></p>
+            <div class="award" id="dialog-award"></div>
+            <video id="dialog-video" class="dialog-video" controls></video>
+            <img id="dialog-image" class="dialog-image" alt="Teacher Image">
+            <button class="close-btn" onclick="closeDialog()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openDialog(title, description, award, mediaSource) {
+            document.getElementById('dialog-title').innerText = title;
+            document.getElementById('modal-description').innerText = description;
+            document.getElementById('dialog-award').innerText = award;
+
+            const videoElement = document.getElementById('dialog-video');
+            const imageElement = document.getElementById('dialog-image');
+
+            if (mediaSource.endsWith('.mp4')) {
+                videoElement.src = mediaSource;
+                videoElement.style.display = 'block';
+                imageElement.style.display = 'none';
+            } else {
+                imageElement.src = mediaSource;
+                imageElement.style.display = 'block';
+                videoElement.style.display = 'none';
+            }
+
+            document.getElementById('overlay').classList.add('show');
+            document.getElementById('dialog').classList.add('show');
+        }
+
+        function closeDialog() {
+            document.getElementById('overlay').classList.remove('show');
+            document.getElementById('dialog').classList.remove('show');
+            document.getElementById('dialog-video').pause();
+        }
+
+        // Create floating elements
+        function createFloatingElements() {
+            const floatingElements = document.querySelector('.floating-elements');
+            const colors = ['#ee7752', '#e73c7e', '#23a6d5'];
+            for (let i = 0; i < 15; i++) {
+                const element = document.createElement('div');
+                element.classList.add('floating-element');
+                element.style.width = `${Math.random() * 20 + 10}px`;
+                element.style.height = element.style.width;
+                element.style.borderRadius = '50%';
+                element.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.top = `${Math.random() * 100}%`;
+                floatingElements.appendChild(element);
+
+                gsap.to(element, {
+                    x: `random(-100, 100)`,
+                    y: `random(-100, 100)`,
+                    rotation: `random(-360, 360)`,
+                    duration: `random(20, 40)`,
+                    repeat: -1,
+                    yoyo: true,
+                    ease: "none"
+                });
+            }
+        }
+
+        createFloatingElements();
+    </script>
+</body>
+</html>
